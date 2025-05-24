@@ -6,7 +6,7 @@ interface CardProps {
   title: string;
   link: string;
   type: "twitter" | "youtube";
-  onDelete: ()=> void;
+  onDelete?: ()=> void;
 }
 
 export function Card({ title, link, type, onDelete }: CardProps) {

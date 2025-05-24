@@ -11,7 +11,7 @@ enum contentTypes {
 }
 
 //controlled component
-export function CreateContentModel({ open, onClose }) {
+export function CreateContentModel({ open, onClose }:any) {
   const titleRef = useRef<HTMLInputElement>();
   const linkRef = useRef<HTMLInputElement>();
   const [type, setType] = useState(contentTypes.Youtube);

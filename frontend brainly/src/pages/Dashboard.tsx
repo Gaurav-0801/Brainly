@@ -10,7 +10,7 @@ import axios from "axios";
 import { BACKEND_URL } from "../config";
 
 interface Content {
-  type: string;
+  type: "twitter" | "youtube";
   title: string;
   link: string;
 }

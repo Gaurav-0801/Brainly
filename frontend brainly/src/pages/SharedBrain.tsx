@@ -6,15 +6,11 @@ import { BACKEND_URL } from "../config";
 import { Logo } from "../icons/Logo";
 
 interface Content {
-  type: string;
+  type: "twitter" | "youtube";
   title: string;
   link: string;
 }
 
-interface SharedBrainResponse {
-  username: string;
-  content: Content[];
-}
 
 export function SharedBrain() {
   const { hash } = useParams();
